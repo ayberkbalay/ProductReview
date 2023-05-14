@@ -1,0 +1,147 @@
+:root {
+    --Dark-cyan: hsl(158, 36%, 37%);
+    --Cream: hsl(30, 38%, 92%);
+    --Very-darkblue: hsl(212, 21%, 14%);
+    --Darkgrayishblue: hsl(228, 12%, 48%);
+    --White: hsl(0, 0%, 100%);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: var(--Cream);
+    font-family: 'Barlow Semi Condensed', sans-serif;
+    font-weight: 600;
+    color: var(--Very-darkblue);
+}
+.card {
+    width: 650px;
+    height: 500px;
+    background-color: var(--White);
+    border-radius: 10px;
+    box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.1);
+    margin: 250px auto;
+    overflow: hidden;
+
+
+}
+
+.productimage {
+    width: 50%;
+    height: 100%;
+    float: left;
+    position: relative;
+    overflow: hidden;
+
+}
+
+.productimage img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    position: absolute;
+    top: 0;
+    left: 0;
+    transition: all 0.5s ease-in-out;
+}
+
+.info {
+    width: 50%;
+    height: 100%;
+    float: left;
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+
+}
+
+.info h1 {
+    font-size: .8rem;
+    margin-bottom: 1rem;
+    font-weight: 300;
+    text-transform: uppercase;
+    letter-spacing: 4px;
+    font-family: "montserrat", sans-serif;
+}
+
+.info p {
+    font-size: 1rem;
+    margin-bottom: 2rem;
+    margin-top: 2rem;
+    font-weight: 300;
+    color: var(--Darkgrayishblue);
+    line-height: 1.5;
+    text-align: left;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+
+    
+    
+}
+.info button {
+    padding: 1rem 2rem;
+    width: 250px;
+    border: none;
+    outline: none;
+    background-color: var(--Dark-cyan);
+    color: var(--White);
+    font-size: 1rem;
+    font-weight: 600;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: all 0.5s ease-in-out;
+    margin-bottom: 20%;
+}
+
+.info button:hover {
+    background-color: var(--Darkgrayishblue);
+    color: var(--White);
+}
+
+.price {
+    width: 50%;
+    height: 100%;
+    float: left;
+    margin-bottom: 1rem;
+    color: var(--Dark-cyan);
+    display: flex;
+
+}
+.detail h2 {
+    font-size: 2rem;
+    font-weight: 800;
+    margin-bottom: 1rem;
+    color: var(--Dark-cyan);
+    display: flex;
+}
+.price h3 {
+    font-size: 2.5rem;
+    font-weight: 600;
+    margin-bottom: 1rem;
+    color: var(--Dark-cyan);
+    display: flex;
+}
+
+.price h4 {
+    font-size: .8rem;
+    font-weight: 300;
+    margin-left: 1rem;
+    margin-top: .5rem;
+    color: var(--Darkgrayishblue);
+    text-decoration: line-through;
+    display: flex;
+}
+
+.button .shop {
+size: 1rem;
+font-weight: 600;
+}
+
